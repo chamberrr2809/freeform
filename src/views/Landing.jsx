@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
 import CookieConsent from "../components/CookieConsent";
+import Banner from "../components/Banner";
 
 function Landing() {
   return (
@@ -10,21 +11,22 @@ function Landing() {
         <title>FreeForm: People-Friendly Forms and Surveys</title>
       </Helmet>
       <CookieConsent />
-      <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
+      <Banner />
+      <div class="bg-white pb-6 sm:pb-8 lg:pb-12 dark:bg-gray-900">
         <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
           <Navbar />
 
           <section class=" flex flex-col lg:flex-row justify-between gap-6 sm:gap-10 mx-2 lg:mx-24 my-5 md:gap-16">
             <div class="xl:w-5/12 flex flex-col justify-center sm:text-center lg:text-left lg:py-12 xl:py-24">
-              <p class="text-indigo-500 md:text-lg xl:text-xl font-semibold mb-4 md:mb-6">
+              <p class="text-indigo-500 dark:text-indigo:300 md:text-lg xl:text-xl font-semibold mb-4 md:mb-6">
                 FreeForm is Open Source
               </p>
 
-              <h1 class="text-black-800 text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-12">
+              <h1 class="text-black-800 dark:text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-12">
                 There's a better way to ask
               </h1>
 
-              <p class="lg:w-4/5 text-gray-500 xl:text-lg leading-relaxed mb-8 md:mb-12">
+              <p class="lg:w-4/5 text-gray-500 dark:text-gray-400 dark:font-semibold xl:text-lg leading-relaxed mb-8 md:mb-12">
                 You don't want to make a boring form. And your audience won't
                 answer one. Create a FreeForm instead—and make everyone happy.
               </p>
@@ -42,6 +44,7 @@ function Landing() {
               <img
                 src="https://images.unsplash.com/photo-1618004912476-29818d81ae2e?auto=format&q=75&fit=crop&w=1000"
                 loading="lazy"
+                draggable="false"
                 alt="Photo by Fakurian Design"
                 class="w-full h-full object-cover object-center"
               />

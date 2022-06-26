@@ -86,11 +86,12 @@ export default function CookieConsent() {
                     </p>
                     <br />
                     <p className="text-md text-gray-500">
-                      To learn more about cookies and how to manage them, visit
+                      To learn more about cookies and how we manage them, visit
                       our{" "}
                       <a
                         href="https://www.cookiepolicygenerator.com/live.php?token=oJhI4D7C6CbFBVfKH1CMlqblyxirRk7K"
                         className="underline text-blue-700"
+                        target="_blank"
                       >
                         Cookie Policy
                       </a>
